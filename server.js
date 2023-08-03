@@ -90,8 +90,8 @@ app.delete('/api/cards/:id', async (req, res) => {
   try {
     await client.connect();
     console.log('Conexión a MongoDB Atlas establecida');
-    const db = client.db('mydatabase'); // Reemplaza 'mydatabase' con el nombre de tu base de datos
-    cardsCollection = db.collection('cards'); // Reemplaza 'cards' con el nombre de tu colección de cartas
+    const db = client.db('mydatabase'); 
+    cardsCollection = db.collection('cards'); 
     app.listen(port, () => {
       console.log(`Servidor escuchando en http://localhost:${port}`);
     });
