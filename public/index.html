@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>YU-GI-OH!</title>
+</head>
+
+<body>
+  <h1>Create Your Card</h1>
+  <form id="cardForm">
+    <label for="cardType">Type of Card:</label>
+    <select id="cardType" name="type">
+      <option value=""></option>
+      <option value="monster">Monster</option>
+      <option value="magic">Magic</option>
+      <option value="trap">Trap</option>
+    </select>
+
+    <label for="cardName">Name:</label>
+    <input type="text" id="cardName" name="name" required>
+
+    <label for="cardDescription">Description:</label>
+    <textarea id="cardDescription" name="description" required></textarea>
+
+    <label for="cardBattlePoints">Battle Points:</label>
+    <input type="number" id="cardBattlePoints" name="battlePoints" required>
+
+    <input type="submit" id="createCardButton" value="Create Card">
+  </form>
+
+  <label for="searchTerm">Search cards by name or type:</label>
+  <input type="text" id="searchTerm">
+  <button id="searchButton">Search</button>
+
+  <button id="loadCards">Load Cards</button>
+
+  <table id="cardTable">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Battle Points</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <div id="message"></div>
+
+  <!-- Formulario para editar cartas -->
+  <form id="editCardForm" style="display: none;">
+    <label for="editCardType">Type of Card:</label>
+    <select id="editCardType" name="type">
+      <option value=""></option>
+      <option value="monster">Monster</option>
+      <option value="magic">Magic</option>
+      <option value="trap">Trap</option>
+    </select>
+
+    <label for="editCardName">Name:</label>
+    <input type="text" id="editCardName" name="name" required>
+
+    <label for="editCardDescription">Description:</label>
+    <textarea id="editCardDescription" name="description" required></textarea>
+
+    <label for="editCardBattlePoints">Battle Points:</label>
+    <input type="number" id="editCardBattlePoints" name="battlePoints" required>
+
+    <input type="submit" id="updateCardButton" value="Update Card">
+    <button type="button" id="deleteCardButton">Delete Card</button>
+  </form>
+
+  <div>
+    <button id="prevPage">Página anterior</button>
+    <span id="currentPage">Página 1</span>
+    <button id="nextPage">Página siguiente</button>
+  </div>
+
+  <!-- Include your JavaScript file -->
+  <script src="app.js"></script>
+</body>
+
+</html>

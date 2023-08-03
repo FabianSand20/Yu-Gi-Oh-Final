@@ -1,0 +1,197 @@
+body {
+  background-color: #222222;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
+
+h1 {
+  color: #ffa500;
+  text-align: center;
+}
+
+/* Card Form Styles */
+#cardForm {
+  width: 300px;
+  margin: 0 auto;
+}
+
+#cardForm label,
+#editCardForm label {
+  color: #fff;
+  display: block;
+  margin-top: 10px;
+}
+
+#cardForm input[type="text"],
+#cardForm textarea,
+#cardForm select,
+#editCardForm input[type="text"],
+#editCardForm textarea,
+#editCardForm select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ffa500;
+  border-radius: 4px;
+  background-color: #282c34;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+#cardForm input[type="submit"],
+#editCardForm input[type="submit"],
+#editCardForm button {
+  background-color: #ffa500;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#cardForm input[type="submit"]:hover,
+#editCardForm input[type="submit"]:hover,
+#editCardForm button:hover {
+  background-color: #ffa500;
+  opacity: 0.8;
+}
+
+/* Search Styles */
+#searchTerm,
+#searchType,
+#searchButton {
+  margin: 10px;
+}
+
+/* Card Table Styles */
+#cardTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#cardTable th,
+#cardTable td {
+  padding: 8px;
+  border-bottom: 1px solid #ffa500;
+  text-align: left;
+}
+
+#cardTable th {
+  background-color: #ffa500;
+  color: #fff;
+}
+
+/* Message Styles */
+#message {
+  color: #ffa500;
+  font-weight: bold;
+  margin: 10px;
+}
+
+/* Pagination Styles */
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+#prevPage,
+#nextPage {
+  background-color: #ffa500;
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#prevPage:hover,
+#nextPage:hover {
+  background-color: #ffa500;
+  opacity: 0.8;
+}
+
+#currentPage {
+  margin: 0 20px;
+  font-weight: bold;
+}
+
+/* Individual Card Styles */
+.card {
+  width: 220px;
+  height: 320px;
+  background-color: #fff;
+  border: 2px solid #ffa500;
+  border-radius: 8px;
+  margin: 10px;
+  display: inline-block;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card .card-info {
+  padding: 10px;
+  text-align: center;
+}
+
+.card .card-info h3 {
+  color: #ffa500;
+  margin: 5px 0;
+}
+
+.card .card-info p {
+  color: #000;
+  margin: 5px 0;
+}
+
+.card .card-info .battle-points {
+  font-size: 20px;
+}
+
+.card .card-info .card-type {
+  font-size: 14px;
+  font-style: italic;
+  color: #555;
+}
+
+.card .card-actions {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card .card-actions button {
+  background-color: #ffa500;
+  color: #fff;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.card .card-actions button:hover {
+  background-color: #ffa500;
+  opacity: 0.8;
+}
+
+.card .card-actions .edit-button {
+  background-color: #4CAF50;
+}
+
+.card .card-actions .delete-button {
+  background-color: #f44336;
+}
